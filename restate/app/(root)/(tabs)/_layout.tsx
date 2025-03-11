@@ -12,7 +12,6 @@ const TabIcon = ({focused,icon,title}:{focused:boolean,icon:any,title:string}) =
     />
     <Text className={`${focused? "text-black-200 font-rubik-medium":"text-black font-rubik"}text-xs w-full text-center mt-1`}>
       {title}
-
     </Text>
   </View>
 )

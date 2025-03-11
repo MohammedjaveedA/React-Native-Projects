@@ -16,7 +16,7 @@ interface GlobalContextType{
     refetch:(newParams?: Record<string,string | number>) => Promise<void>
 }
 
-const GlobalContext = createContext<GlobalContextType | undefined>
+const GlobalContext = createContext<GlobalContextType | any>
 (undefined)
 
 interface GlobalProviderProps{
@@ -36,7 +36,7 @@ export const GlobalProvider = ({children}:GlobalProviderProps) =>{
     // console.log(JSON.stringify(user,null,2));
     return (
         <GlobalContext.Provider value={{isLoggedIn,user,loading,refetch}}>
-            {children }
+            {children}
         </GlobalContext.Provider>
 
     )

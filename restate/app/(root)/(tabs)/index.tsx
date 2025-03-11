@@ -64,9 +64,9 @@ export default function Index() {
               className="size-12 rounded-full"
               />
               <View className="flex flex-col items-start ml-2 justify-center">
-                <Text className="text-xs font-rubik text-black-100">Good Morning
-
-                </Text>
+                <Text className="text-xs font-rubik text-black-100">
+                  Good Morning
+               </Text>
                <Text className="text-base font-rubik-medium text-black-300">{user?.name}</Text>
               </View>
             </View>
