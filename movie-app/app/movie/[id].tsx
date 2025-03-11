@@ -90,7 +90,7 @@ const Details = () => {
             value={movie?.genres?.map((g) => g.name).join(" • ") || "N/A"}
           />
 
-          <View className="flex flex-row justify-between w-1/2">
+          {/* <View className="flex flex-row justify-between w-1/2">
             <MovieInfo
               label="Budget"
               value={`$${(movie?.budget?? 0) / 1_000_000} million`}
@@ -101,7 +101,7 @@ const Details = () => {
                 (movie?.revenue ?? 0) / 1_000_000
               )} million`}
             />
-          </View>
+          </View> */}
 
           <MovieInfo
             label="Production Companies"
