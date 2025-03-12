@@ -1,50 +1,123 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🎬 Movie App
 
-## Get started
+A React Native Movie App that fetches and displays movie details using an API.
 
-1. Install dependencies
+📌 Features
 
-   ```bash
-   npm install
-   ```
+✅ Browse popular movies
+✅ View detailed movie information
+✅ User-friendly UI with smooth navigation
 
-2. Start the app
+🛠️ Tech Stack
 
-   ```bash
-    npx expo start
-   ```
+React Native (Expo)
 
-In the output, you'll find options to open the app in a
+Typescript
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+The Movie Database (TMDB) API
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Appwrite
 
-## Get a fresh project
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+🚀 Getting Started
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1️⃣ Prerequisites
 
-## Learn more
+Ensure you have the following installed:
 
-To learn more about developing your project with Expo, look at the following resources:
+Node.js (Latest LTS)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Git (for cloning the repository)
 
-## Join the community
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+⚡ Installation
+
+Clone the repository
+
+git clone https://github.com/MohammedjaveedA/React-Native-Projects.git
+cd React-Native-Projects/movie-app
+
+Install dependencies
+
+npm install
+
+
+---
+
+🔑 API Setup
+
+This app fetches movie data from an API (like TMDb).
+
+1. Sign up at TMDb (or any movie API you're using).
+
+
+2. Get your API key.
+   steps:
+  - after sign up login to TMDB
+  - Search for discover movie
+  - select Movies 
+  - then select discover/movie below Movies 
+  - then select the node js 
+  - copy the api key from right side of the page
+
+
+3. Add the API key in your project:
+
+open .env file and add the api key
+
+Replace YOUR_API_KEY_HERE with your actual key.
+
+---
+
+📁 Appwrite setup
+
+1. Create an account in appwrite
+
+2. Create a project and follow the process which are guided by appwrite
+
+3. Copy project id and paste it on .env file
+
+4. create a database and inside the database create the metrices then add the attributes like title,description etc
+
+5. In settings allow the CRUD permissions
+
+6. Then copy the id's paste it on .env file
+
+
+
+---
+
+▶️ Running the App
+
+Start the Expo development server:
+
+npx expo start --clear
+
+or
+
+npm start
+
+Then, scan the QR code using:
+📱 Expo Go (Android/iOS)
+
+
+
+---
+
+📌 Troubleshooting
+
+If dependencies fail to install, run:
+npm install --legacy-peer-deps
+
+
+
+---
+
+💡 Contributing
+
+Want to improve the app? Feel free to fork and submit a pull request!
