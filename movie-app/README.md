@@ -13,6 +13,8 @@ A React Native Movie App that fetches and displays movie details using an API.
 
 React Native (Expo)
 
+Nativewind
+
 Typescript
 
 The Movie Database (TMDB) API
